@@ -1,0 +1,156 @@
+/* Reset */
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+a,
+a:visited,
+a:active,
+a:focus {
+	/*color: #fff;*/
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.section {
+	width: 740px;
+	background-color: #f5f5f5;
+	color: gray;
+	margin: 0 auto;
+}
+.section__inner {
+	width: 540px;
+	margin: 0 auto;
+}
+.section__title {
+	font-size: 40px;
+	text-align: center;
+}
+.section__list,
+.list__item {
+	background-color: #ffffff;
+}
+.list {
+	width: 100%;
+	margin: 20px 0;
+	font-size: 20px;
+}
+.list__item-main,
+.list__item {
+	line-height: 60px;
+	border-bottom: 1px solid gray;
+	position: relative;
+}
+.list__sub-list {
+	border-top: 1px solid gray;
+}
+.list__item:hover:after {
+	/*content: 'x';*/
+	font-size: 14px;
+	color: #c20;
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.fa-times {
+	display: none;
+}
+.fa:hover {
+	color: #c20;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.list__checkbox:checked  + label {
+	text-decoration: line-through;
+}
+.list__input-inner {
+	padding: 2px;
+	border: 1px solid gray;
+}
+.list__input-field {
+	width: 496px;
+	margin-left: 40px;
+	padding: 20px;
+	font-size: 20px;
+	box-shadow:10px 10px 50px 20px pink inset;	
+}
+
+.item-counter {
+	display: block;
+	float: left;
+	width: 30%;
+	padding: 5px 0;
+}
+
+
+.menu {
+	display: table;
+	width: 70%;
+	float: right;
+}
+.menu__list {
+	display: table-cell;
+}
+.menu__list_left {
+	width: 60%;
+	text-align: left;
+}
+.menu__list_right {
+	width: 40%;
+	text-align: right;
+}
+.menu__item {
+	font-size: 16px;
+	display: inline-block;
+	color: gray;
+	height: 30px;
+}
+.menu__item:last-child {
+	margin-right: 0;
+}
+.menu__link:hover {
+	cursor: pointer;
+	border: 1px solid gray;
+	border-radius: 2px;
+	padding: 5px;
+	text-decoration: none;
+}
+.menu__btn {
+	display: inline-block;
+	text-align: center;
+	padding: 4px;
+	border: 1px solid transparent;
+	background-color: transparent;
+}
+
+.menu__btn:hover {
+	border: 1px solid #eb6;
+	border-radius: 3px;
+}
