@@ -2,57 +2,67 @@
 <html>
 	<head>
 		<title>todos</title>
-		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<meta charset="UTF-8">
 	</head>
 
 	<body>
 		<div class="wrapper">
-			<div class="section">
-				<div class="section__inner">
-					<h1 class="section__title">todos</h1>
-					<ul class="section__list list">
-						<li class="list__item-main">
-							<em>What needs to be done?</em>
-							
-							<ul class="list__sub-list">							
-								<li class="list__item">
-									<input id="item-1" class="list__checkbox" type="checkbox">
-									<label for="item-1">Buy milk</label>
-									<i class="fa fa-times" aria-hidden="true"></i>
-
-								</li>
-								<li class="list__item">
-									<input id="item-2" class="list__checkbox" type="checkbox" checked="checked">
-									<label for="item-2">Prepare the report</label>
-								</li>
-								<li class="list__item">
-									<input id="item-3" class="list__checkbox" type="checkbox">
-									<label for="item-3">Call Mr.Smyth</label>
-								</li>
-								<li class="list__input">
-									<div class="list__input-inner">
-										<input class="list__input-field" type="text" placeholder="Pick up dress from the dry clener">
-									</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="section__inner clearfix">
-					<div class="item-counter">
-						<p>3 items left</p>
+			<div class="sections">
+			<h1 class="section__title">todos</h1>
+				<div class="section">
+					<div class="section__inner">
+						<ul class="section__list list">
+							<li class="list__item-main">
+								<i class="fa fa-angle-down list__item-main-icon" aria-hidden="true"></i>
+								<p class="list__item-main-title">What needs to be done?</p>
+								
+								<ul class="list__sub-list">							
+									<li class="list__item">
+										<input id="item-1" class="list__checkbox-input" type="checkbox">
+										<i class="fa fa-circle-thin list__icon list__icon_unchecked" aria-hidden="true"></i>
+										<i class="fa fa-check-circle-o list__icon list__icon_checked" aria-hidden="true"></i>
+										<label for="item-1" class="list__item-label">Buy milk</label>
+										<i class="fa fa-times list__icon list__icon_delete" aria-hidden="true"></i>
+									</li>
+									<li class="list__item">
+										<input id="item-2" class="list__checkbox-input" type="checkbox">
+										<i class="fa fa-circle-thin list__icon list__icon_unchecked" aria-hidden="true"></i>
+										<i class="fa fa-check-circle-o list__icon list__icon_checked" aria-hidden="true"></i>
+										<label for="item-2" class="list__item-label">Prepare the report</label>
+										<i class="fa fa-times list__icon list__icon_delete" aria-hidden="true"></i>
+									</li>
+									<li class="list__item">
+										<input id="item-3" class="list__checkbox-input" type="checkbox">
+										<i class="fa fa-circle-thin list__icon list__icon_unchecked" aria-hidden="true"></i>
+										<i class="fa fa-check-circle-o list__icon list__icon_checked" aria-hidden="true"></i>
+										<label for="item-3" class="list__item-label">Call Mr.Smyth</label>
+										<i class="fa fa-times list__icon list__icon_delete" aria-hidden="true"></i>
+									</li>
+									<li class="list__input">
+										<div class="list__input-inner">
+											<input class="list__input-field" type="text" placeholder="Pick up dress from the dry clener">
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
-					<div class="menu">
-					<ul class="menu__list menu__list_left clearfix">
-						<li class="menu__item"><button type="button" class="menu__btn">All</button></li>
-						<li class="menu__item"><button type="button" class="menu__btn">Active</button></li>
-						<li class="menu__item"><button type="button" class="menu__btn">Completed</button></li>
-					</ul>
-					<ul class="menu__list menu__list_right clearfix">
-						<li class="menu__item"><button type="button" class="menu__btn">Clear Completed</button></li>
-					</ul>
+					<div class="section__inner section__inner_counter clearfix">
+						<div class="item-counter">
+							<p>3 items left</p>
+						</div>
+						<div class="menu">
+						<ul class="menu__list menu__list_left clearfix">
+							<li class="menu__item"><button type="button" class="menu__btn">All</button></li>
+							<li class="menu__item"><button type="button" class="menu__btn">Active</button></li>
+							<li class="menu__item"><button type="button" class="menu__btn">Completed</button></li>
+						</ul>
+						<ul class="menu__list menu__list_right clearfix">
+							<li class="menu__item"><button type="button" class="menu__btn">Clear Completed</button></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
